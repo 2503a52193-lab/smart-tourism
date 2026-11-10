@@ -1,0 +1,34 @@
+.recommendation-section{background:#fff;border:1px solid #e9ede8;border-radius:15px;padding:24px;margin-bottom:48px}
+.recommendation-heading{margin-bottom:20px}
+.recommendation-heading .eyebrow{display:flex;align-items:center;gap:6px}
+.recommendation-heading h2{font:700 23px Manrope,sans-serif;letter-spacing:-.7px;margin:8px 0}
+.recommendation-heading p,.recommendation-result-heading p{margin:0;color:#77847d;font-size:12px;line-height:1.55}
+.recommendation-form{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:end}
+.recommendation-form label{display:grid;gap:7px;color:#3d5148;font-size:11px;font-weight:600}
+.recommendation-form input,.recommendation-form select{height:42px;width:100%;border:1px solid #dfe5df;border-radius:8px;padding:0 10px;background:#fff;color:#31483e;outline:none}
+.recommendation-form input:focus,.recommendation-form select:focus{border-color:#218574;box-shadow:0 0 0 3px #2185741b}
+.recommendation-optional{color:#87928c;font-size:10px;font-weight:400}
+.recommendation-submit{grid-column:1/-1;justify-self:start;margin-top:3px}
+.recommendation-results{margin-top:24px}
+.recommendation-result-heading{display:flex;align-items:start;justify-content:space-between;gap:16px;margin-bottom:14px}
+.recommendation-result-heading h3{font:700 17px Manrope,sans-serif;margin:0 0 5px}
+.recommendation-count{white-space:nowrap;color:#217464;background:#e4f1e9;border-radius:20px;padding:6px 10px;font-size:10px;font-weight:700}
+.recommendation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.recommendation-card{min-width:0;border:1px solid #e9ede8;border-radius:11px;padding:15px;display:flex;flex-direction:column;align-items:flex-start}
+.recommendation-badge{border-radius:20px;padding:5px 8px;background:#e6f4eb;color:#28764b;font-size:9px;font-weight:700}
+.recommendation-badge.over-budget{background:#fff3df;color:#9a691c}
+.recommendation-badge.rate-unavailable{background:#f1f3f1;color:#66736b}
+.unpriced-recommendations{margin-top:18px}
+.unpriced-recommendations>h4{font:700 14px Manrope,sans-serif;margin:0 0 6px}
+.unpriced-recommendations>h4 span{margin-left:7px;color:#77847d;font:500 10px "DM Sans",sans-serif}
+.unpriced-recommendations>p{margin:0 0 13px;color:#77847d;font-size:11px;line-height:1.55}
+.recommendation-card .recommendation-link+.recommendation-link{margin-top:8px}
+.recommendation-card h4{font:700 15px Manrope,sans-serif;margin:12px 0 4px}
+.recommendation-place,.recommendation-room{color:#77847d;font-size:10px;margin:0 0 7px}
+.recommendation-price{display:grid;gap:3px;margin:10px 0 14px}
+.recommendation-price strong{font:700 17px Manrope,sans-serif;color:#217464}
+.recommendation-price small,.recommendation-price span{font:400 10px "DM Sans",sans-serif;color:#77847d}
+.recommendation-link{margin-top:auto;display:inline-flex;align-items:center;gap:6px;color:#218574;font-size:10px;font-weight:700}
+.recommendation-link:hover{text-decoration:underline}
+@media(max-width:850px){.recommendation-form{grid-template-columns:repeat(2,minmax(0,1fr))}.recommendation-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.recommendation-section{padding:18px}.recommendation-form,.recommendation-grid{grid-template-columns:1fr}.recommendation-heading h2{font-size:20px}.recommendation-submit{width:100%}}

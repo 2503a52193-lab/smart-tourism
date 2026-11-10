@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome</h1>
+    <p class="subtitle">Login or create your account</p>
+
+    <div class="tabs">
+        <button type="button" class="tab active"
+                data-form="admin">Admin</button>
+        <button type="button" class="tab"
+                data-form="user">User Login</button>
+        <button type="button" class="tab"
+                data-form="register">Register</button>
+    </div>
+
+    <form id="admin" class="login-form">
+        <h2>Admin Login</h2>
+        <input type="text" placeholder="Admin username" required>
+        <input type="password" placeholder="Admin password" required>
+        <button type="submit">Login as Admin</button>
+    </form>
+
+    <form id="user" class="login-form hidden">
+        <h2>User Login</h2>
+        <input type="email" placeholder="Email address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login as User</button>
+    </form>
+
+    <form id="register" class="login-form hidden">
+        <h2>Create Account</h2>
+        <input type="text" placeholder="Full name" required>
+        <input type="email" placeholder="Email address" required>
+        <input type="password" placeholder="Create password"
+               minlength="8" required>
+        <input type="password" placeholder="Confirm password"
+               minlength="8" required>
+        <button type="submit">Register</button>
+    </form>
+
+    <p id="message" aria-live="polite"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

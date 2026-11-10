@@ -1,0 +1,94 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px #0003;
+}
+
+h1, h2, .subtitle {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.tabs {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px 5px;
+    border: none;
+    background: #eee;
+    color: #333;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #667eea;
+    color: white;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.login-form > button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background: #667eea;
+    cursor: pointer;
+}
+
+.login-form > button:hover {
+    background: #4c5fd5;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+    overflow-wrap: anywhere;
+}

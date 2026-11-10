@@ -1,0 +1,75 @@
+# ==========================================
+# ROAMLY - Git Ignore Configuration
+# ==========================================
+
+# Environment variables & secrets (NEVER commit secrets)
+.env
+.env.*
+!.env.example
+*.env
+
+# Python Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node.js & Frontend dependencies
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Frontend Build Outputs
+dist/
+frontend/dist/
+build/
+frontend/build/
+
+# Local SQLite Databases & Instances (contain local/test data)
+*.db
+*.sqlite
+*.sqlite3
+instance/
+backend/instance/
+tourism_local.db
+backend/tourism_local.db
+
+# Exported spreadsheet files & test data
+*.xlsx
+*.xls
+*.csv
+New folder/
+
+# IDE & Editor Temporary Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Log Files & Runtime Artefacts
+*.log
+logs/
+*.pid
+
